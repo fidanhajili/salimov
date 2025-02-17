@@ -1,0 +1,121 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
+.swiper-portfolio {
+  padding-right: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-portfolio {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+}
+
+#switcher,
+#showSwitcher {
+  transition: 1s all;
+}
+#switcher.open,
+#showSwitcher.open {
+  margin-left: 0;
+}
+#showSwitcher.close {
+  margin-left: -500px;
+}
+#switcher ul li {
+  margin: 0 15px 15px 0;
+}
+
+@font-face {
+  font-family: "Microsoft Sans Serif";
+  src: url("/fonts/micross.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("/fonts/SharpGrotesk-SemiBold10.otf") format("opentype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("/fonts/SharpGrotesk-Bold10.otf") format("opentype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("/fonts/SharpGrotesk-Bold20.otf") format("opentype");
+  font-weight: 800; /* Bold 20 */
+  font-style: normal;
+}
+
+#home {
+  font-weight: 600;
+} 
+
+.back-btn {
+  z-index: 11111;
+  margin-left: 0px;
+  position: fixed;
+  right: 0;
+  top: 220px;
+  background: #444;
+  border-left: 0;
+  font-size: 18px;
+  display: block;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  left: 0;
+  right: initial;
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.back-btn i {
+  font-size: 25px;
+  color: #fff;
+}
+/* Home page */
+.apply-now-btn {
+  background-color: transparent;
+  border: 1px solid #423F8B;
+  color: #423F8B;
+  border-radius: 17px;
+  padding: 5px 15px;
+  font-size: 20px;
+  margin-right: 42px;
+}
+.career-center-btn {
+  background-color: transparent;
+  color: #DEDCDC;
+  border: transparent;
+}
+.career-center-btn .circle {
+color: #6E69D4;
+background-color: #6E69D4;
+width: 12px;
+height: 12px;
+border-radius: 50%; 
+display: inline-block;
+margin-right: 10px;
+}
+#home-link p {
+  font-weight: 700;
+font-family: "Sharp Grotesk", sans-serif;
+font-size: 40px;
+}
+#home-link span {
+  color: #6E69D4;
+  font-family: "Sharp Grotesk", sans-serif;
+  font-weight: 700; 
+}
