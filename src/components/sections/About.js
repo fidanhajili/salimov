@@ -1,4 +1,8 @@
+import { useRouter } from "next/router";
+
+
 const About = () => {
+  const router = useRouter();
   return (
     <section className="about main-section flex-column-mobile" id="about">
 
@@ -20,17 +24,20 @@ const About = () => {
         <div className="skills-content">
           <div>
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
+            
+            <div className="animated-layer fade-in-down-animation fadeInLeft wow"  onClick={() => router.push("/java")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/java.svg" alt="" />
                 </div>
               </span>
-              <h4>Java</h4>
+              <h4>
+      Java
+    </h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
+            <div className="animated-layer fade-in-up-animation fadeInRight wow"  onClick={() => router.push("/frontend")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/frontend.svg" alt="" className="frontend-img" />
@@ -42,7 +49,7 @@ const About = () => {
           </div>
           <div>
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
+            <div className="animated-layer fade-in-down-animation fadeInLeft wow" onClick={() => router.push("/csharp")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/csharp.svg" alt="" />
@@ -52,7 +59,7 @@ const About = () => {
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
+            <div className="animated-layer fade-in-up-animation fadeInRight wow" onClick={() => router.push("/react")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/react.svg" alt="" />
@@ -63,7 +70,7 @@ const About = () => {
           </div>
           <div>
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
+            <div className="animated-layer fade-in-down-animation fadeInLeft wow" onClick={() => router.push("/agile")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/agile.svg" alt="" />
@@ -72,7 +79,7 @@ const About = () => {
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
+            <div className="animated-layer fade-in-up-animation fadeInRight wow" onClick={() => router.push("/data")} style={{ cursor: "pointer" }}>
               <span>
                 <div className="about-img">
                   <img src="assets/about/data.svg" alt="" />

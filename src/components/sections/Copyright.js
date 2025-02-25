@@ -4,7 +4,7 @@ const Copyright = () => {
       <img
         alt=""
         className="z-1 hide-mobile"
-        src="assets/separator-copyright.png"
+        src="assets/separator.png"
       />
       <div>
         <span> © Baku Development Center  {new Date().getFullYear()} </span>

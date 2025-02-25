@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header>
@@ -31,8 +33,14 @@ const Header = () => {
         {/* FREELANCE STARTS */}
         <div className="mail">
           <p>
-          <button className="apply-now-btn">Müraciət et</button>
-            <button className="career-center-btn"><span className="circle"></span>Karyera Mərkəzi</button>
+            <button className="apply-now-btn">Müraciət et</button>
+
+            {/* Karyera Mərkəzi düyməsi Link ilə */}
+            <Link href="/career">
+              <button className="career-center-btn">
+                <span className="circle"></span>Karyera Mərkəzi
+              </button>
+            </Link>
           </p>
         </div>
         {/* FREELANCE ENDS */}
@@ -78,4 +86,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;

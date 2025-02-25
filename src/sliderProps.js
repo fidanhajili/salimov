@@ -72,4 +72,48 @@ export const salimovSlider = {
       type: "bullets",
     },
   },
+  testimonials: {
+    slidesPerView: 'auto',
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1025: {
+        slidesPerView: 2,
+      },
+    },
+    autoplay: {
+      delay: 0, // Duraksamayı tamamen kaldırıyoruz
+      disableOnInteraction: false,
+    },
+    speed: 1500, // Daha hızlı kayma için değeri düşürdüm
+    spaceBetween: 40,
+    grabCursor: true,
+    freeMode: {
+      enabled: true, // Serbest kayma modu
+      momentum: true, // Akıcı geçiş sağlar
+      momentumRatio: 0.5, // Daha doğal kayma için oran belirlenir
+    },
+  },
+  
+  portfolioItems: {
+    slidesPerView: "auto", // Görsellerin daha akıcı geçmesini sağlıyor
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      type: "bullets",
+    },
+    autoplay: {
+      delay: 0, 
+      disableOnInteraction: false,
+    },
+    speed: 3000, 
+  },
+  
 };
+
