@@ -1831,9 +1831,36 @@ font-size: 40px;
 
 /* about-pages */
 
+/* trainers */
+.trainer-cards .card {
+  background-color: transparent;
+}
+.trainer-cards .card img {
+width: 210px;
+}
+.trainer-cards .trainer-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 0; 
+  position: relative;
+}
 
-
-
+.trainer-cards .card {
+  position: relative;
+  margin-left: -100px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+.trainer-cards .card:first-child {
+  margin-left: 0; 
+}
+.trainer-cards .card:hover {
+  z-index: 10;
+  transform: scale(1.1); 
+}
+/* trainers */
 
 /* [ RESPONSIVE ] */
 /*================================================== */

@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderForPages from './headerforpages'
 import Footer from './footerforpages'
 
+
 const java = () => {
   return (
    <>
@@ -50,7 +51,7 @@ const java = () => {
 <button>Bizimlə əlaqə</button>
 </div>
    </div>
-   
+
    <Footer />
    </>
   )
